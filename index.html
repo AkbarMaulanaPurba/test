@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title></title>
+</head>
+<body>
+<table id="gas" border="1">
+<thead>
+<tr>
+<td>id</td>
+<td>nama</td>
+<td>alamat</td>
+<td>gender</td>
+<th>Aksi</th>
+</tr>
+</thead>
+
+<script type="text/javascript">
+var usertbl  = document.getElementById('gas');
+fetch('http://localhost:2050/users'
+)
+.then(res =>{
+return res.json();
+})
+.then(data =>{
+data.forEach(user =>{
+usertbl.innerHTML += `<tr><td>${user.id}</td><td>${user.nama}</td><td>${user.alamat}</td><td>${user.gender}</td><td><a href="hapus.html?id=${user.id}">hapus</a></</tr>`;
+} )
+})
+
+</script>
+</table>
+<a href="tambah.html" >tambah data</a>
+</body>
+</html>
