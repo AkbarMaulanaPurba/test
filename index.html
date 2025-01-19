@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title></title>
+</head>
+<body>
+<center>
+<h2>Data Web Akbar Ganteng</h2>
+</center>
+<table id="gas" border="1">
+<thead>
+<tr>
+<td>id</td>
+<td>nama</td>
+<td>alamat</td>
+<td>gender</td>
+</tr>
+</thead>
+
+<script type="text/javascript">
+var usertbl  = document.getElementById('gas');
+fetch('http://localhost:2050/users'
+)
+.then(res =>{
+return res.json();
+})
+.then(data =>{
+data.forEach(user =>{
+usertbl.innerHTML += `<tr><td>${user.id}</td><td>${user.nama}</td><td>${user.alamat}</td><td>${user.gender}</td></tr>`;
+} )
+})
+
+</script>
+</table>
+<a href="hapus.html" >hapus data</a>
+<a href="tambah.html" >tambah data</a>
+</body>
+</html>
