@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZCoffe</title>
+</head>
+
+<body id="body">
+
+    <div class="container">
+
+        <header>
+            <center>
+                <div class="head">
+                    <h1>G e n <u>Z</u> C o f f e e</h1>
+                    <nav>
+                        <span id="drpdwn">
+                            More<i class="fa fa-angle-down" id="down" style="padding-left: 5px;"></i><i id="up"
+                                class="fa fa-angle-up" style="padding-left: 5px; display:none;"></i>
+
+                            <ul id="list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#list_menu">Menu</a></li>
+                            </ul>
+
+                        </span>
+
+                        <button class="login" onclick="window.location.href='login.html';">Login</button>
+                    </nav>
+                </div>
+            </center>
+        </header>
+
+        <svg id="svg"style="margin-top: 100px; margin-bottom:-20px;" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,256L60,250.7C120,245,240,235,360,218.7C480,203,600,181,720,192C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+        </svg>
+        <main>
+            <div class="content">
+                <div id="home">
+                    <article id="word">Selamat datang di <u>GenZCoffe</u>, tempat di mana aroma
+                        kopi segar dan suasana hangat
+                        menyatu.
+                        Nikmati setiap tegukan yang membawa cerita, ditemani oleh racikan terbaik dari biji kopi
+                        pilihan."
+                        "Kami percaya bahwa setiap cangkir memiliki kisahnya sendiri. Dari espresso yang kuat hingga
+                        latte
+                        yang lembut, temukan rasa favoritmu di sini.
+                        Di setiap sudut <u>GenZCoffe</u>, kami menghadirkan lebih dari sekadar kopi. Ini adalah tempat
+                        di
+                        mana kreativitas bertemu dengan kenyamanan, di mana perbincangan ringan berubah menjadi
+                        inspirasi,
+                        dan di mana setiap pelanggan adalah bagian dari keluarga kami.
+
+                    </article>
+                    <aside class="aside"><img src="assets/img/kopi2.jpg" style="border-radius: 50%  ;" width="380px"
+                            height="380px"></aside>
+                </div>
+                <article id="mn">
+                    <h1
+> 
+                        Menu</h1>
+                    <br>
+                    <div id="list_menu">
+
+                        <div class="menu">
+
+                            <h3>Espresso Based</h3>
+
+                            <div class="menu-content">
+
+                                <h2>Americano</h2>
+
+                                <img src="/assets/img/americano.png" width="200px">
+                                <p id="desk1">Espresso yang dicampur air
+                                    panas, menghasilkan rasa kopi yang lebih ringan.</p>
+                                <br>
+                                <p class="price" style="margin-right:25px;">Price: <u>Rp20.000</u></p>
+                            </div>
+                            <br>
+                            <div class="menu-content" style="justify-content:flex-end;margin-top: -30px;">
+                                <h2>Cappuccino</h2>
+                                <img src="/assets/img/cappucino.png" width="250px">
+                                <p id="desk2">Espresso dengan steamed susu dan foam tebal, seimbang pahit dan creamy.
+                                </p>
+                                <br>
+                                <p class="price" style="margin-right:25px;">Price: <u>Rp30.000</u></p>
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            <h3>Chocolate Coffee </h3>
+                            <div class="menu-content">
+
+                                <h2 id="redvv">Red Velvet Latte</h2>
+                                <br>
+                                <img src="/assets/img/redvelvet.png" width="250px" style="margin-top: -60px;">
+                                <br>
+                                <p id="desk3">Latte manis
+                                    dengan sirup red velvet, memiliki rasa cokelat ringan dengan sentuhan vanila, serta
+                                    tekstur cream</p>
+                                <br>
+                                <p class="price" style="margin-right:-5px;">Price: <u>Rp15.000</u></p>
+                            </div>
+                            <br>
+                            <div class="menu-content" style="justify-content:flex-end;margin-top: -30px;">
+                                <h2>Tiramisu Latte</h2>
+                                <img src="/assets/img/tiramisu.png" width="180px"
+                                    style="margin-top: 20px;margin-bottom:20px;">
+
+                                <p id="desk4">Latte dengan rasa khas tiramisu,
+                                    perpaduan kopi, cokelat, dan sedikit aroma keju mascarpone yang lembut.</p>
+                                <br>
+                                <p class="price" style="margin-right:-5px;">Price: <u>Rp25.000</u></p>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <h3>Non-Coffee</h3>
+                            <div class="menu-content">
+
+                                <h2>Matcha Latte</h2>
+
+                                <img src="/assets/img/matcha.png" width="200px">
+                                <p id="desk5">Teh hijau matcha berpadu dengan
+                                    susu lembut, menciptakan rasa creamy dan khas.</p>
+                                <br>
+                                <p class="price" style="margin-right:25px;">Price: <u>Rp18.000</u></p>
+                            </div>
+                            <br>
+                            <div class="menu-content" style="justify-content:flex-end;margin-top: -30px;">
+                                <h2>Iced Chocolate</h2>
+                                <br>
+                                <img src="/assets/img/icecokelat.png" width="250px" style="margin-bottom: 30px;">
+                                <br>
+                                <p id="desk6"> Latte rasa tiramisu, perpaduan kopi, cokelat, dan lembutnya keju mascarpone.</p>
+                                <br>
+                                <p class="price" style="margin-right:25px;">Price: <u>Rp15.000</u></p>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <h3>Pasta & Noodles</h3>
+                            <div class="menu-content">
+
+                                <h2> Fried Noodles</h2>
+                                <br>
+                                <img src="/assets/img/mirgoreng.png" width="200px">
+                                <br>
+                                <p id="desk7">Mie goreng khas
+                                    Asia dengan sayuran dan daging.</p>
+                                <br>
+                                <p class="price">Price: <u>Rp15.000</u></p>
+                            </div>
+                            <br>
+                            <div class="menu-content" style="justify-content:flex-end;margin-top: -30px;">
+                                <h2>Spaghetti Carbonara</h2>
+                                <img src="/assets/img/spageti.png" width="250px" style="margin-top: 50px;">
+
+                                <p id="desk8"> Pasta creamy dengan saus telur
+                                    dan keju.</p>
+                                <br>
+                                <p class="price" style="margin-right:-5px;">Price: <u>Rp25.000</u></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <br>
+
+            </div>
+        </main>
+
+        <footer>
+<div class="footer">
+    Dibuat Oleh Akbar Maulana Purba<br>
+    Copyright &copy; <span id="tahun"></span>
+</div>
+        </footer>
+    </div>
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
